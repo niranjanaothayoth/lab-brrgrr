@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure padding and border don't add to the element's width */
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-
 .header {
     position: relative;
 }
-
 
 .Group-4 {
     width: 1440px;
@@ -43,9 +40,6 @@ body {
     background-color: #212121;
 }
 
-
-
-
 .Group-7 {
     width: 240px;
     height: 301px;
@@ -61,7 +55,6 @@ body {
     height: 220px;
     object-fit: contain;
 }
-
 
 .Group-2 {
     position: absolute;
@@ -118,13 +111,11 @@ body {
 }
 
 .button.active {
-
     width: 112px;
     height: 58px;
     background-color: #ffd058;
     line-height: 58px;
     text-align: center;
-
 }
 
 .Rectangle3 {
@@ -135,26 +126,29 @@ body {
     right: 10%;
     bottom: 10%;
     width: 450px;
-    height: 179px;
+    height: 220px; /* Adjust height as needed */
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
     border: solid 1px #e4e4e4;
     background-color: #ffffff;
+    padding: 20px; /* Add padding for better spacing */
 }
 
 .Rectangle4 {
     position: relative;
-    width: 430px;
-    height: 159px;
+    width: 100%; /* Full width */
+    height: 159px; /* Adjust height as needed */
     background-color: #000000;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
 }
 
 .Group-16 {
-
     width: 158px;
     height: 170px;
     object-fit: contain;
-
 }
 
 .menu {
@@ -183,14 +177,17 @@ body {
 .burger {
     position: absolute;
     bottom: 0%;
-    left: 25%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center align items horizontally */
 }
 
 .burger img {
-    width: 154px;
-    height: auto;
+    width: 80px; /* Adjust width as per your requirement */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Adjust margin between images */
 }
 
 .Rectangle4 p {
@@ -205,11 +202,9 @@ body {
 .Rectangle4 p.price-details {
     font-size: 30px;
     font-weight: bold;
-
 }
 
 .Rectangle5 {
-
     position: absolute;
     bottom: 10%;
     right: 5%;
@@ -222,11 +217,12 @@ body {
     text-align: center;
     line-height: 42px;
 }
-.footers{
-	position: absolute;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-	font-style: normal;
+
+.footers {
+    position: absolute;
+    top: 750px;
+    margin-left: 80px;
+    font-size: 18px;
+    font-family: Nunito Sans;
+    font-style: normal;
 }
